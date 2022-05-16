@@ -64,3 +64,4 @@ windows 环境下的 fileBrowser 一键部署 支持内网穿透 无需云服务
 		默认文件位置，建议严格区分大小写
 		filebrowser.exe -d filebrowser.db config set --root  ./files
 		这里的 --root  ./files 其中./files 就是网盘文件存放路径 代表当前目录中的files文件夹 可自行设置文件夹目录  
+# fileBrowserWin
