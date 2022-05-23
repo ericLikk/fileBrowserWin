@@ -104,10 +104,10 @@ timeout /t 5 /nobreak > NUL
 
 ::每天杀一下ding.exe 重启ding服务
 ::chcp 437
-schtasks /delete /tn "auto shutdown" /f
+::schtasks /delete /tn "auto shutdown" /f
 
 ::每一分钟执行一次
-schtasks /create /tn "auto shutdown" /tr "./dingkill.bat" /sc minute /mo 1
+schtasks /create /tn "auto shutdown" /tr "./dingkill.bat" /sc minute /mo 1 /f
 
 ::/sc daily /st 00:00:00 每天几点执行
 
