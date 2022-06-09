@@ -106,8 +106,8 @@ timeout /t 5 /nobreak > NUL
 ::chcp 437
 ::schtasks /delete /tn "auto shutdown" /f
 
-::每一分钟执行一次
-schtasks /create /tn "auto shutdown" /tr "./dingkill.bat" /sc minute /mo 1 /f
+::每60分钟执行一次
+schtasks /create /tn "auto shutdown" /tr "./dingkill.bat" /sc minute /mo 60 /f
 
 ::/sc daily /st 00:00:00 每天几点执行
 
